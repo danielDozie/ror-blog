@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+</head>
+<body class="max-w-7xl mx-8 bg-gray-900 text-gray-300">
+   <div class="">
+    <h1 class="text-3xl font-bold my-4">Posts</h1>
+    <div>
+        <% @posts.each do |post| %>
+            <div class="my-4">
+            <div class="text-md font-semibold text-blue-400"><%= post.title %></div>
+            <div class="text-sm font-light"><%= post.content %></div>
+            </div>
+        <% end %>
+    </div>
+   </div>
+</body>
+</html>
